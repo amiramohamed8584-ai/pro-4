@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.CSS">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+      <header class="z-20 w-full fixed top-0 bg-amber-200/50 ">
+  <nav class="flex justify-between items-center px-4 py-5 bg-black/30 backdrop-blur-md">
+    <div class="md:hidden">
+      <input   type="checkbox" id="menu-toggle" class="hidden peer">
+      <label for="menu-toggle" class="text-amber-100 text-2xl cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div class="hidden peer-checked:flex flex-col items-center gap-4 fixed top-16 left-0 w-full h-[calc(100vh-64px)] bg-black/95 p-6">
+        <a href="#" class="text-amber-100 text-lg font-bold">الرئيسية</a>
+        <a href="#bags" class="text-amber-100 text-lg font-bold">الشنط</a>
+        <a href="#shooce" class="text-amber-100 text-lg font-bold">الاحذية</a>
+        <a href="#cart" class="text-amber-100 text-lg font-bold">المشتريات </a>
+        <input   type="search" placeholder="ابحث عن منتجك" class="mt-6 text-right px-6 py-3 text-sm border rounded bg-amber-100">
+      </div>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+      <input id="search" type="search" placeholder="ابحث عن منتجك" class="text-right px-4 py-1.5 text-sm border rounded">
+      <ul class="flex items-center text-sm font-light gap-6">
+        <li><a href="#cart" class="transition text-amber-100 block py-2 font-bold">المشتريات</a></li>
+        <li><a href="#shooce" class="transition text-amber-100 block py-2 font-bold">الاحذية</a></li>
+        <li><a href="#bags" class="transition text-amber-100 block py-2 font-bold">الشنط</a></li>
+        <li><a href="#" class="transition text-amber-100 block py-2 font-bold">الرئيسية</a></li>
+      </ul>
+    </div>
+    <div class="logo flex flex-col">
+      <img src="image/logo.jpeg"  alt="logo" class="w-20 h-20 mr-10">
+    </div>
+  </nav>
+</header>
+    <div class="mt-35">
+        <ul class="list  grid grid-cols-3" id="bags">
+                    <!-- ...............cart-1....................... -->
+            <li data-price="200">
+                <div class="card bg-base-100 w-90 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="image/bag-3.jpeg" height="100" width="200"
+      alt="Shoes"
+      class="rounded-xl w-90 h-64"/>
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">paris & clasic</h2>
+    <p>تصميم ثنائي اللون عصري مع يد علوية وحزام كتف قابل للإزالة، ومزينة بميدالية ذهبية هندسية أنيقة تضفي لمسة فخامة.  </p>
+    <p>200$</p>
+    <div class="card-actions">
+      <button class="btn btn-primary"style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+    </div>
+  </div>
+</div>
+            </li>
+            <!-- ...............cart-2....................... -->
+            <li data-price="250">
+                <div class="card bg-base-100 w-90 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="image/bag-2.jpeg" 
+      alt="Shoes"
+      class="rounded-xl w-90 h-64"/>
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Romance Bag</h2>
+    <p>تصميم كلاسيكي راقٍ بلون بيج هادئ، مزينة بفيونكة من الساتان المطبوع بزهور رقيقة، مع قفل معدني ذهبي فاخر.  </p>
+    <p>250$</p>
+    <div class="card-actions">
+      <button class="btn btn-primary"style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+    </div>
+  </div>
+</div>
+            </li>
+            <!-- ...............cart-3....................... -->
+            <li data-price="260">
+                <div class="card bg-base-100 w-90 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="image/bag-1.jpeg" height="100" width="200"
+      alt="Shoes"
+      class="rounded-xl w-90 h-64"/>
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Good Things Bag</h2>
+    <p>مزيج أنيق بين البني والأبيض بتصميم واسع ومناسب للاستخدام اليومي، مزينة بفيونكة بنية وميدالية دائرية متدلية بحبة لؤلؤ ووردة.</p>
+    <p>260$</p>
+    <div class="card-actions">
+      <button class="btn btn-primary"style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+    </div>
+  </div>
+</div>
+            </li>
+            <!-- ...............cart-4....................... -->
+            <li data-price="220">
+                <div class="card bg-base-100 w-90 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="image/bag-4.jpeg" height="100" width="200"
+      alt="Shoes"
+      class="rounded-xl w-90 h-64"/>
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Sweet Bear Bag</h2>
+    <p>لون وردي هادئ وناعم يناسب الإطلالات الكيوت، ومزينة بميدالية على شكل دبدوب أبيض لطيف وفراشة ذهبية مرصعة باللؤلؤ.  </p>
+    <p>220$</p>
+    <div class="card-actions">
+      <button class="btn btn-primary"style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+    </div>
+  </div>
+</div>
+            </li>
+            <!-- ...............cart-5....................... -->
+            <li data-price="160">
+                <div class="card bg-base-100 w-90 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="image/bag-5.jpeg" height="100" width="200"
+      alt="Shoes"
+      class="rounded-xl w-90 h-64"/>
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Elegance Chic Bag</h2>
+    <p>تصميم عملي وفاخر باللونين الأبيض والكحلي، مزينة بوشاح (سكارف) حريري مشجر بأسلوب راقٍ وميدالية ذهبية متدلية بخرزات لؤلؤية.</p>
+    <p>160$</p>
+    <div class="card-actions">
+      <button class="btn btn-primary"style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+    </div>
+  </div>
+</div>
+            </li>
+            <!-- ...............cart-6....................... -->
+            <li data-price="180">
+                <div class="card bg-base-100 w-90 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="image/bag-6.jpeg" height="100" width="200"
+      alt="Shoes"
+      class="rounded-xl w-90 h-64"/>
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Cherry hobo Bag</h2>
+    <p>تصميم أنيق ومنحني (Hobo) بلون أبيض ناصع، تتميز بيد مزينة بعقد جانبية وميدالية كريستالية على شكل حبات كرز حمراء لامعة تزيدها جاذبية.</p>
+    <p>180$</p>
+    <div class="card-actions">
+      <button class="btn btn-primary"style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+    </div>
+  </div>
+</div>
+            </li></ul>
+            <!-- ...............cart-7....................... -->
+              <ul class="list  grid grid-cols-3" id="shooce">
+            <li data-price="200">
+                <div class="card bg-base-100 w-90 shadow-sm">
+                    <figure class="px-10 pt-10">
+<img
+src="image/choose-1.jpeg" height="100" width="200"
+alt="Shoes"
+class="rounded-xl w-90 h-64"/>
+</figure>
+<div class="card-body items-center text-center">
+<h2 class="card-title">Floral Ballet Flats</h2>
+<p>حذاء بالرينا فلات أنيق بخامة مفرغة مطرزة بالزهور الرقيقة وحزام رفيع، يجمع بين الراحة التامة والأنوثة العالية.  </p>
+<p>200$</p>
+<div class="card-actions">
+    <button class="btn btn-primary"style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+</div>
+</div>
+</div>
+</li>
+            <!-- ...............cart-8....................... -->
+            <li data-price="250">
+                <div class="card bg-base-100 w-90 shadow-sm">
+                    <figure class="px-10 pt-10">
+<img
+src="image/choose-2.jpeg" height="100" width="200"
+alt="Shoes"
+class="rounded-xl w-90 h-64"/>
+</figure>
+<div class="card-body items-center text-center">
+<h2 class="card-title">Glamour Strappy Heels</h2>
+<p>صندل سواريه بكعب عريض ومريح، مزين بسيور رفيعة مرصعة ببراعم الستراس البراقة لمظهر جذاب في المناسبات السعيدة</p>
+<p>250$</p>
+<div class="card-actions">
+    <button class="btn btn-primary" style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+</div>
+</div>
+</div>
+</li>
+            <!-- ...............cart-9....................... -->
+            <li data-price="300">
+                <div class="card bg-base-100 w-90 shadow-sm">
+                    <figure class="px-10 pt-10">
+<img
+src="image/choose-3.jpeg" height="100" width="200"
+alt="Shoes"
+class="rounded-xl w-90 h-64"/>
+</figure>
+<div class="card-body items-center text-center">
+<h2 class="card-title">Daisy Soft Sneakers</h2>
+<p>حذاء رياضي خفيف بألوان هادئة تجمع بين الأبيض والوردي، ومزين بتطريز زهرة دوار الشمس الصغيرة.</p>
+<p>300$</p>
+<div class="card-actions">
+    <button class="btn btn-primary" style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+</div>
+</div>
+</div>
+</li>
+            <!-- ...............cart-10....................... -->
+            <li data-price="260">
+                <div class="card bg-base-100 w-90 shadow-sm">
+                    <figure class="px-10 pt-10">
+<img
+src="image/choose-4.jpeg" height="100" width="200"
+alt="Shoes"
+class="rounded-xl w-90 h-64"/>
+</figure>
+<div class="card-body items-center text-center">
+<h2 class="card-title">Urban Chunky Sneakers</h2>
+<p>حذاء رياضي كاجوال بتصميم عصري ذو نعل سميك ومريح جداً للمشي اليومي والجامعة.</p>
+<p>260$</p>
+<div class="card-actions">
+    <button class="btn btn-primary" style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+</div>
+</div>
+</div>
+</li>
+            <!-- ...............cart-11....................... -->
+            <li data-price="200">
+                <div class="card bg-base-100 w-90 shadow-sm">
+                    <figure class="px-10 pt-10">
+<img
+src="image/choose-5.jpeg" height="100" width="200"
+alt="Shoes"
+class="rounded-xl w-90 h-64"/>
+</figure>
+<div class="card-body items-center text-center">
+<h2 class="card-title">Butterfly Charm Platform</h2>
+<p>سنيكرز أبيض ناصع بنعل مرتفع، يزدان بتطريز فراشة ورصيعة وميدالية قلب لطيفة لإطلالة شابة وكيوت</p>
+<p>200$</p>
+<div class="card-actions">
+    <button class="btn btn-primary" style="background-color:rgb(192, 115, 21) ; border-color:rgb(167, 130, 10) ;">Buy Now</button>
+</div>
+</div>
+</div>
+</li>
+            <!-- ...............cart-12....................... -->
+            <li data-price="280">
+                <div class="card bg-base-100 w-90 shadow-sm">
+                    <figure class="px-10 pt-10">
+<img
+src="image/choose-6.jpeg" height="100" width="200"
+alt="Shoes"
+class="rounded-xl w-90 h-64"/>
+</figure>
+<div class="card-body items-center text-center">
+<h2 class="card-title">Royal Suede Pumps</h2>
+<p>حذاء كلاسيكي ذو مقدمة مدببة من الشامواه الناعم، بكعب رفيع باللون الذهبي البراق لإطلالة فاخرة ومتميزة جداً.  </p>
+<p>280$</p>
+<div class="card-actions">
+    <button class="btn btn-primary" style="background-color:rgb(192, 115, 21) ;border-color:rgb(167, 130, 10) ;">Buy Now</button>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<h2 class="font-bold text-2x3 text-center " style="color: rgb(167, 130, 10);">SHOPPING </h2>
+<div id="cart" class="grid grid-cols-3 gap-3"></div>
+<div id="pricerusilt" class="mt-5"></div>
+<button id="showprice" class="btn hidden mx-auto block bg-amber-200" >show price</button>
+</div>
+<script src="script/javascript.js"></script>
+</body>
+</html>
